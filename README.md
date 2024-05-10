@@ -1,6 +1,6 @@
 # Voice-Controlled-Assistant
 Description:
-Implemented a voice-controlled assistant using Python, incorporating natural language processing and various APIs. The assistant responds to voice commands, providing information from Wikipedia, performing calculations, opening web pages, and engaging in interactive activities like playing games. The project demonstrates proficiency in speech recognition, text-to-speech conversion, API integration, and algorithmic logic. This code when provided with a working youtube API key, can search up youtube for the required topic and provide you the links and titles of the video within seconds.
+Implemented a voice-controlled assistant using Python, incorporating natural language processing and various APIs. The assistant responds to voice commands, providing information from Wikipedia, performing calculations, opening web pages, and engaging in interactive activities like playing games. The project demonstrates proficiency in speech recognition, text-to-speech conversion, API integration, and algorithmic logic. This code when provided with a working youtube API key, can search up youtube for the required topic and provide you the links and titles of the video within seconds. It can also create a file and write what ever you speak in it.
 
 Key Features:
 Speech Recognition: Utilized the SpeechRecognition library to interpret voice commands and trigger corresponding actions.
