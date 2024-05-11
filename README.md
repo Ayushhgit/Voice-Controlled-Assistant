@@ -1,25 +1,36 @@
-# Voice-Controlled-Assistant
-Description:
-Implemented a voice-controlled assistant using Python, incorporating natural language processing and various APIs. The assistant responds to voice commands, providing information from Wikipedia, performing calculations, opening web pages, and engaging in interactive activities like playing games. The project demonstrates proficiency in speech recognition, text-to-speech conversion, API integration, and algorithmic logic. This code when provided with a working youtube API key, can search up youtube for the required topic and provide you the links and titles of the video within seconds. It can also create a file and write what ever you speak in it.
+# Virtual Assistant
 
-Key Features:
-Speech Recognition: Utilized the SpeechRecognition library to interpret voice commands and trigger corresponding actions.
-API Integration: Integrated with external APIs such as Wikipedia, YouTube, and Google to fetch relevant data based on user queries.
-Interactive Functionality: Implemented interactive features like a calculator, joke-teller, and a Rock-Paper-Scissors game to engage users.
-Error Handling: Implemented robust error handling mechanisms to gracefully manage exceptions during speech recognition and API interactions.
-User Interface: Provided both auditory and visual feedback to users through speech synthesis and console messages.
-Extendibility: Designed with modular architecture, allowing easy addition of new features and enhancements.
-Technologies Used:
+## Introduction
+This Python-based Virtual Assistant is designed to streamline daily tasks and provide assistance in various domains through voice commands. Leveraging APIs, web scraping, and AI, it offers functionalities ranging from fetching information to entertainment.
 
-Python
-SpeechRecognition
-pyttsx3 (Text-to-Speech)
-Google APIs (Wikipedia, YouTube)
-Webbrowser (for opening web pages)
-datetime (for time-related queries)
-Exception Handling
-Future Enhancements:
+## Features
+- **Voice Recognition**: Interact with the assistant using voice commands.
+- **Wikipedia Search**: Retrieve summarized information from Wikipedia.
+- **YouTube Integration**: Search and watch YouTube videos directly.
+- **OpenAI Text Generation**: Generate text based on prompts using OpenAI's powerful models.
+- **Web Scraping**: Open websites like Instagram, Twitter, and Google with ease.
+- **File Management**: Create files with specified content effortlessly.
+- **Time Reporting**: Get the current time on demand.
+- **Joke Telling**: Lighten the mood with a good joke.
 
-Addition of more advanced features such as weather forecast, email integration, and smart home device control.
-Integration with machine learning algorithms for improved natural language understanding.
-Implementation of a graphical user interface (GUI) for better user interaction and feedback.
+## Getting Started
+1. **Clone the Repository**: `git clone https://github.com/your-username/virtual-assistant.git`
+2. **Install Dependencies**: `pip install -r requirements.txt`
+3. **API Keys**: Obtain keys for Google API and OpenAI, replace placeholders in the code.
+4. **Run the Program**: Execute `virtual_assistant.py`.
+
+## Usage
+- Launch the program and wait for the assistant's prompt.
+- Speak or type commands like:
+  - "Tell me a joke"
+  - "Open Instagram"
+  - "Calculate 2 plus 2"
+  - "Search Wikipedia for Artificial Intelligence"
+  - "Generate text about cats"
+  - "Play a game"
+
+## Contribution
+Contributions are welcome! Whether it's fixing bugs, adding features, or improving documentation, feel free to contribute via pull requests.
+
+## Issues
+If you encounter any issues or have suggestions, please open an issue on the repository.
