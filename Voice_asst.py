@@ -7,6 +7,7 @@ from googleapiclient.discovery import build
 import pyjokes
 import os
 import random as rd
+import openai
 
 engine = pyttsx3.init()
 voices = engine.getProperty('voices')
@@ -14,6 +15,8 @@ engine.setProperty('voice', voices[1].id)
 
 api_key = "API-KEY"
 youtube = build("youtube", "v3", developerKey=api_key)
+
+openai.api_key = "API-KEY"
 
 def speak(audio):
     engine.say(audio)
@@ -169,6 +172,33 @@ if __name__ == "__main__":
                   os.makedirs(directory)
                   file_path = os.path.join(directory, file_name)
                   create_file(file_path, file_content)  
+
+
+            elif 'generate text' in query:
+                print("sure, what do you want me to generate?")
+                speak("sure, what do you want me to generate?")
+                request = command().lower()
+                response = openai.completion.create( engine = "text-davinci-003", prompt= request, max_tokens= 150)
+                in_text = response.choices[0].text.strip()
+                print(in_text)
+                speak(in_text)
+                print("do you want me to save this text?")
+                speak("do you want me to save this text?")
+                res = command().lower()
+                if 'yes' in res:
+                    print("saving your file...")
+                    speak("saving your file...")
+                    directory = "files"
+                    if not os.path.exists(directory):
+                        os.makedirs(directory)
+                        file_path = os.path.join(directory,"GPT generated prompt")
+                        create_file(file_path, in_text)
+                    else:
+                        file_path = os.path.join(directory,"GPT generated prompt")
+                        create_file(file_path, in_text)
+                elif 'no' in res:
+                    print("okay")
+                    speak("okay")        
 
 
             elif 'wikipedia' in query:
